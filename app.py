@@ -100,7 +100,7 @@ def registor():
     rpword=request.form['rpword']
     image=request.files['filename']
 
-    image.save("/home/fasilk/PycharmProjects/SystemUser/static/pics/" + image.filename)
+    image.save("C:/Users/febin/Documents/GitHub/SystemUser/static/pics/" + image.filename)
     path = "/static/pics/" + image.filename
 
     con, cur=connection()
